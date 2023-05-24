@@ -4,13 +4,34 @@
     body {
         background-color: aqua;
     }
-    #links{
+
+
+    #header {
+        margin: none;
+        height: 1000px;
         border: solid black 5px;
-        margin: 20px;
-        text-align: center;
+        padding: 20px;
+        color: rgb(0, 0, 0);
+        
     }
+
+    #links {
+        border: solid black 5px;
+        padding: 10px;
+        margin: none;
+        height: 100px;
+        color: rgb(0, 0, 0);
+        box-shadow: 5px 5px 5px 5px ;
+    }
+
+    img {
+        height: 750px;
+        width: 750px;
+        float: right;
+    }
+
     @media screen and (max-width: 450px) {
-        .blogBox img {
+        img {
             float: none;
             width: 100%;
             max-width: none;
@@ -19,10 +40,11 @@
 </style>
 
 <head>
+
     <title>Interests Page</title>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -30,21 +52,28 @@
     <header>
         <nav>
             <ul>
-                <li><a href="file.html">Intro Page</a></li>
-                <li><a href="interests.html">Interests</a></li>
-                <li><a href="www/index.html">RPG Maker Game</a></li>
-                </ul>
-            </nav>
-        </header>
+                <div id="links">
+                    <li><a href="file.html">Intro Page</a></li>
+                    <li><a href="interests.html">Interests</a></li>
+                    <li><a href="www\index.html">RPG Maker Game</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <h1>My Interests</h1>
-        <p>My interests include football, wokring out, and roaming around.</p>
-        <h2>Computer Science Interests</h2>
-        <p>I like cyber security and learning how security walls work.</p>
+        <div id="header">
+            <h1>My Interests</h1>
+            <p>My interests include football, wokring out, and roaming around.</p>
+            <h2>Computer Science Interests</h2>
+            <p>I like cyber security and learning how security walls work.</p>
+            <img src="IMG_8692.JPG" alt="ME">
         </main>
     <footer>
         <p>Details</p>
-        </footer>
+        </div>
+        
+
+    </footer>
 </body>
 
 </html>
